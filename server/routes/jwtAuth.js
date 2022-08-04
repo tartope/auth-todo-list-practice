@@ -6,7 +6,9 @@ const pool = require("../db");
 const bcrypt = require('bcrypt');
 //requires jwtGenerator
 const jwtGenerator = require('../utils/jwtGenerator');
+//requires validinfo file (add to register and login routes below)
 const validInfo = require('../middleware/validInfo');
+//requires authorization file (add to is-verigy route)
 const authorization = require('../middleware/authorization');
 
 
@@ -80,8 +82,10 @@ router.post('/login', validInfo, async (req, res) => {
 })
 
 //Authorize the JWT token 
+//Checks if token being sent to us is valid
 router.get('/is-verify', authorization, async (req, res) => {
     try {
+        //If token is valid, return a true statement
         res.json(true);
     } catch (error) {
         console.error(err.message);

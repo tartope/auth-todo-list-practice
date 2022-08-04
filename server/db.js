@@ -6,7 +6,7 @@ const pool = new Pool({
     user: 'artope',
     host: 'localhost',
     port: 5432,
-    database: 'jwttutorial'
+    database: 'authtodolist'
 });
 
 //exports the instance
