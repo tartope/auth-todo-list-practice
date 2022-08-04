@@ -1,4 +1,4 @@
-# jwt-pern-registration-login-practice
+# auth-todo-list-practice
 1. Postgresql: connects db with server in order to run pg queries
 2. Express: used to quickly create server in node.js
 3. React: used to build the frontend
