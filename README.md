@@ -76,5 +76,4 @@
 ## Educational source
 
 [freeCodeCamp.org](https://www.youtube.com/watch?v=7UQBMb8ZpuE)# auth-todo-list-practice
-# auth-todo-list-practice
-# auth-todo-list-practice
+
