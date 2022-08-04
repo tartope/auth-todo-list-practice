@@ -41,7 +41,38 @@
 ### Build Login Route
 30. Buld 'login' route in 'jwtAuth.js' file
 ### Create JWT middleware
-31. 
+31. Create new folder, 'middleware'
+32. In 'middleware', create 'authorization.js' file
+33. In 'middleware', create 'validinfo.js' file (checks if email is valid or not)
+34. In 'jwtAuth.js', take in middleware; require 'validinfo.js' file (add to register and login routes)
+### Build Private Routes
+35. In 'jwtAuth.js' file, build 'is-verify' route; require 'authorization.js' file (add to 'is-verify' route)
+36. In 'routes' folder, create 'dashboard.js' file
+37. In 'index.js' file, create dashboard route
+38. In 'dashboard.js' file, build dashboard functions (CRUD)
+### Create Client Side
+39. In parent folder run 'npx create-react-app client'
+40. Remove files not needed ('App.test.js', 'logo.svg', 'serviceWorker.js', 'setupTests.js')
+41. Remove imports not needed from 'index.js' and 'App.js' 
+42. In 'index.html' file add 'bootstrap 4' css link, and add modal scripts
+43. Create 'components' folder with all component files needed
+44. In client folder, install 'npm i react-router-dom react-toastify'
+### Set-up React Router Dom
+45. In 'App.js', import react-router-dom
+46. Build basic Dashboard, Login, Register components and import to 'App.js'
+47. In 'App.js', build Router and Route paths
+48. Set state 'isAuthenticated' and build ternaries navigating to routes based on authentication
+49. Create 'setAuth' function that toggles true/false, and pass it to each component
+### Build Register Component
+50. Build register form and style with bootstrap
+### Build Login Route
+51. Build login form and style
+### Build Dashboard Component
+### Validate JWT Token when refresh
+52. Create function that checks if token is valid, and use 'useEffect' to continually bring user to the dashboard upon refresh
+### Add Notifications with react-toastify
+53. Import react-toastify and it's css into 'App.js' (https://www.npmjs.com/package/react-toastify)
+54. Import react-toastify into components where notificatios are wanted
 ## Educational source
 
-[freeCodeCamp.org](https://www.youtube.com/watch?v=7UQBMb8ZpuE)
+[freeCodeCamp.org](https://www.youtube.com/watch?v=7UQBMb8ZpuE)# auth-todo-list-practice
